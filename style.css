@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: transparent radial-gradient(closest-side at 51% 49%, #b5e7ed 0%, #f8f8f8 100%) 0% 0% no-repeat padding-box;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #707070;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+}
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    background-image: url("./images/map.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: #0675c1;
+    font-size: 3rem;
+    margin: 2.5rem 3rem 1rem 3rem;
+}
+
+small {
+    color: #0675c1;
+    font-size: 1.5rem;
+}
+
+.draggable-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin-top: 3rem;
+    gap: 20px;
+    max-width: 80%;
+}
+.draggable-item {
+    border: 2px solid #0675c1;
+    border-radius: 20px;
+    box-shadow: 0px 3px 5px rgba(167, 167, 167, 0.485);
+    overflow: hidden;
+    
+}
+
+.draggable-item.over .draggable {
+    background-color: #70707033;
+}
+.draggable-item.wrong {
+    border: 2px solid #fa7777;
+
+}
+
+.draggable-item.right {
+    border: 2px solid #57b287;
+}
+
+.number {
+    font-size: 1.5rem;
+    background-color: #0675c1;
+    display: block;
+    width: 100%;
+    color: #ffffff;
+    padding: 5px;
+}
+.draggable-item.wrong .number{
+    background-color: #fa7777;
+
+}
+
+.draggable-item.right .number{
+    background-color: #57b287;
+
+}
+
+.draggable {
+    cursor: grabbing;
+    width: 160px;
+    height: 146px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    margin: 15px;
+
+}
+
+
+
+.draggable span.fi {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 50%;
+    border: solid 1px #dddddd;
+}
+
+button.check {
+    background-color: #0675c1;
+    border: none;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 12px;
+    width: 220px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+button.check:hover {
+    background-color: #0270ba;
+ }
+button.check:active {
+    transform: scale(0.98);
+    background-color: #50afee;
+    transition: all .5s ease;
+}
